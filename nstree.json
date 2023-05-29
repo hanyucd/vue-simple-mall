@@ -1,0 +1,39 @@
+{
+  "name": "vue-simple-mall",
+  "tree": [
+    {
+      "name": "src",
+      "body": "",
+      "index": 9,
+      "bold": false,
+      "path": "src",
+      "children": [
+        {
+          "name": "common",
+          "body": "",
+          "index": 9,
+          "bold": false,
+          "path": "src/common",
+          "children": [
+            {
+              "name": "style",
+              "body": "",
+              "index": 9,
+              "bold": false,
+              "path": "src/common/style",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "store",
+          "body": "",
+          "index": 9,
+          "bold": false,
+          "path": "src/store",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
