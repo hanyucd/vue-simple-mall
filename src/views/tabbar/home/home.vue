@@ -1,16 +1,18 @@
 <template>
-  <div class="code">
-    首页
-
-    <TabBar :current-index="0" />
+  <div class="warpper">
+    <StaticPart />
+    <NearByShop />
   </div>
+  <TabBar :current-index="0" />
 </template>
 
 <script>
+import StaticPart from './components/StaticPart/StaticPart.vue';
+import NearByShop from './components/NearByShop/NearByShop';
 import TabBar from '@/components/TabBar/TabBar.vue';
 
 export default {
-  components: { TabBar },
+  components: { TabBar, StaticPart, NearByShop },
   setup() {}
 };
 </script>

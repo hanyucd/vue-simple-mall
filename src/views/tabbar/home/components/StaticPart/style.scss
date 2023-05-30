@@ -1,0 +1,72 @@
+.position {
+  position: relative;
+  padding: 0.16rem 0.18rem 0.16rem 0;
+  line-height: 0.22rem;
+  font-size: 0.16rem;
+  // 引入样式的混入
+  @include ellipse;
+  .position__icon {
+    position: relative;
+    top: 0.01rem;
+    font-size: 0.2rem;
+  }
+  .position__notice {
+    position: absolute;
+    right: 0;
+    top: 0.17rem;
+    font-size: 0.2rem;
+  }
+  color: $content-fontcolor;
+}
+.search {
+  margin-bottom: 0.12rem;
+  line-height: 0.32rem;
+  background: $search-bgColor;
+  color: $search-fontColor;
+  border-radius: 0.16rem;
+  .iconfont {
+    display: inline-block;
+    padding: 0 0.08rem 0 0.16rem;
+    font-size: 0.16rem;
+  }
+  &__text {
+    display: inline-block;
+    font-size: 0.14rem;
+  }
+}
+.banner {
+  height: 0;
+  overflow: hidden;
+  // hack技巧：预留出高度防抖（图片高/图片宽）
+  padding-bottom: 25.4%;
+  &__img {
+    width: 100%;
+  }
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.16rem;
+  &__item {
+    width: 20%;
+    margin-bottom: 0.16rem;
+    &__img {
+      display: block;
+      width: 0.4rem;
+      height: 0.4rem;
+      margin: 0 auto;
+    }
+    &__desc {
+      margin: 0.06rem 0 0.06rem 0;
+      text-align: center;
+      color: $content-fontcolor;
+    }
+  }
+}
+
+.gap {
+  // 设置负值 让分隔条的宽变整宽
+  margin: 0 -0.18rem;
+  height: 0.1rem;
+  background-color: $content-bgColor;
+}

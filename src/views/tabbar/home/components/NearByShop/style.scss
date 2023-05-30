@@ -1,0 +1,11 @@
+.nearby {
+  &__title {
+    margin: 0.16rem 0 0.02rem 0;
+    font-size: 0.18rem;
+    font-weight: normal;
+    color: $content-fontcolor;
+  }
+  a {
+    text-decoration: none;
+  }
+}
